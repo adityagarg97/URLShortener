@@ -1,0 +1,10 @@
+const express =require("express")
+const config=require("./config")
+const path =require("path")
+const server=express()
+const port=process.env.PORT||1111
+server.use(express.json())
+server.use(express.urlencoded({extended:true}))
+server.use(express.static(path.join(__dirname,"public")))
+server.use("/",require("./api"))
+server.listen(port,()=>console.log("Server Started At :"+config.webhost))

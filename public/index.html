@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <style>
+        body{
+            background-color: dimgray;
+            font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+            font-feature-settings: inherit;
+            font-size: larger;
+            color: honeydew;
+            font-stretch: expanded;
+        }
+        input{
+            background-blend-mode: darken;
+            margin: 20px;
+        }
+        h1{
+            margin: 20px;
+            margin-top: 100px;
+        }
+        #result{
+            margin: 50px;
+            color: white;
+        }
+        a{
+            color: honeydew;
+            text-decoration: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+<h1 class="text-center">Welcome to URL Shortener</h1>
+<div class="text-center">Enter your url</div>
+<div class="row">
+    <div class="col"></div>
+    <input type="text" id="urlBox" class="form-control col-6">
+    <div class="col"></div>
+</div>
+<br>
+<div class="row">
+    <div class="col"></div>
+    <button id="btn" type="submit" class="btn btn-active btn-lg">Submit</button>
+    <div class="col"></div>
+</div>
+
+<div id="result" class="text-center"></div>
+<div class="col-sm"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+</body>
+</html>
