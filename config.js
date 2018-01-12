@@ -4,6 +4,6 @@ let config={
         host:"localhost",
         name:"urls"
     },
-    webhost:"http://localhost:"+port+"/"
+    webhost:"https://url99.herokuapp.com/"
 }
 exports=module.exports=config
