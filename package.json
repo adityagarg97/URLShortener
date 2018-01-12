@@ -11,11 +11,13 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.2",
+    "mongodb": "^3.0.1",
+    "mongoose": "^4.13.9",
     "mysql2": "^1.5.1",
     "sequelize": "^4.31.0"
   },
   "engines": {
-    "node":"9",
-    "npm":"5"
+    "node": "9",
+    "npm": "5"
   }
 }
