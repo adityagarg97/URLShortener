@@ -5,7 +5,12 @@ const config=require("./config")
 let encode=require("./logic").encode
 let decode=require("./logic").decode
 const mongoose=require("mongoose")
-mongoose.connect("mongodb://localhost:27017/urls")
+mongoose.Promise = global.Promise;// mongoose promises deprecated, use node - mongoosejs.com/docs/promises
+let url =process.env.URL
+mongoose.connect(url)
+mongoose.connection.once('open', () => { console.log('MongoDB Connected'); });
+mongoose.connection.on('error', (err) => { console.log('MongoDB connection error: ', err); });
+
 route.post("/shorten",(req,res)=> {
     if (req.body.Url.length == 0) {
         res.send({
