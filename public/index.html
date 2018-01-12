@@ -13,13 +13,10 @@
         body{
             background-color: dimgray;
             font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
-            font-feature-settings: inherit;
-            font-size: larger;
+            font-size: 20pt;
             color: honeydew;
-            font-stretch: expanded;
         }
         input{
-            background-blend-mode: darken;
             margin: 20px;
         }
         h1{
@@ -34,6 +31,11 @@
             color: honeydew;
             text-decoration: whitesmoke;
         }
+        @media (max-width: 576px) {
+            h1{
+                margin:10px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -41,7 +43,7 @@
 <div class="text-center">Enter your url</div>
 <div class="row">
     <div class="col"></div>
-    <input type="text" id="urlBox" class="form-control col-6">
+    <input type="text" id="urlBox" class="form-control col-md-6 col-xs-12">
     <div class="col"></div>
 </div>
 <br>
@@ -52,7 +54,6 @@
 </div>
 
 <div id="result" class="text-center"></div>
-<div class="col-sm"></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 </body>
